@@ -1,0 +1,34 @@
+version: "2"
+fields:
+  - title: Network
+    id: network
+    description: >-
+      The watch-tower has no default (besides that prefilled below). Specify the networks you wish to monitor here in a comma-separated list.
+      For example, to monitor Mainnet and Gnosis Chain you would specify "mainnet,gnosis".
+    target:
+      type: environment
+      name: NETWORKS
+      service: watch-tower
+    required: true
+  - title: Addresses
+    id: addresses
+    description: >-
+      By default, the watch-tower will index and monitor conditional orders for all users. When running your own watch-tower, you can specify
+      the addresses you wish to monitor here in a comma-separated list. For example, to monitor the addresses 0x1234 and 0x5678 you would specify
+      "0x1234,0x5678". If you wish to monitor all addresses, leave this field blank.
+    target:
+      type: environment
+      name: ADDRESSEES
+      service: watch-tower
+    required: false
+  - title: RPC page size
+    id: page
+    description: >-
+      When synchronizing with the blockchain, the watch-tower will request blocks in batches. By default, the watch-tower will request 5000 blocks
+      at a time. If you wish to change this, specify the page size here. As this is configured to run on dappnode, against your own RPC node, you
+      can set this to a very high number (e.g. 1000000).
+    target:
+      type: environment
+      name: PAGE_SIZE
+      service: watch-tower
+    required: true

@@ -1,0 +1,36 @@
+{
+  "name": "cow-watch-tower.dnp.dappnode.eth",
+  "version": "0.1.0",
+  "upstreamVersion": "v1.1.1",
+  "architectures": ["linux/amd64"],
+  "upstreamRepo": "cowprotocol/watch-tower",
+  "upstreamArg": "UPSTREAM_VERSION",
+  "shortDescription": "ComposableCoW watch-tower by CoW Protocol",
+  "description": "A watch-tower for indexing and placing orders for the Composable CoW conditional order framework.",
+  "type": "service",
+  "author": "CoW Developers (https://github.com/cowprotocol)",
+  "categories": ["Communications"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cowprotocol/dappnodepackage-cow-watch-tower.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cowprotcool/dappnodepackage-cow-watch-tower/issues"
+  },
+  "links": {
+    "homepage": "https://cow.fi"
+  },
+  "license": "GPL-3.0",
+  "backup": [
+    {
+      "name": "data",
+      "path": "/usr/src/app/database"
+    }
+  ],
+  "globalEnvs": [
+    {
+      "envs": ["EXECUTION_CLIENT_MAINNET", "EXECUTION_CLIENT_GNOSIS", "EXECUTION_CLIENT_PRATER"],
+      "services": ["watch-tower"]
+    }
+  ]
+}

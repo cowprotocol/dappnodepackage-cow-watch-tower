@@ -1,0 +1,8 @@
+[
+    {
+      "labels": {
+        "job": "watch-tower"
+      },
+      "targets": ["watch-tower.cow-watch-tower.dappnode:8080"]
+    }
+]
