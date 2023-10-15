@@ -17,4 +17,4 @@ If the watch-tower detects that a chain has failed to produce a block for a peri
 
 ### Containers
 
-1. `watch-tower` - the sole container. This container inherits from [upstream's GitHub packages repository]() and provides minor modifications, notably including `bash` and an `entrypoint.sh` script to facilitate automatic configuration based on the user's settings from the package's setup wizard.
+1. `watch-tower` - the sole container. This container inherits from [upstream's GitHub packages repository](https://github.com/cowprotocol/watch-tower/pkgs/container/watch-tower) and provides minor modifications, notably including `bash` and an `entrypoint.sh` script to facilitate automatic configuration based on the user's settings from the package's setup wizard.
