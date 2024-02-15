@@ -5,7 +5,7 @@ services:
     build:
       context: watch-tower
       args:
-        UPSTREAM_VERSION: v1.1.1
+        UPSTREAM_VERSION: v2.2.0
     ports:
       - "8080:8080/tcp"
     environment:
