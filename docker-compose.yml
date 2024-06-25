@@ -1,21 +1,21 @@
 version: "3.5"
 services:
   watch-tower:
-    image: "watch-tower.cow-watch-tower.dnp.dappnode.eth:0.1.0"
+    image: watch-tower.cow-watch-tower.dnp.dappnode.eth:0.1.0
     build:
       context: watch-tower
       args:
-        UPSTREAM_VERSION: v1.1.1
+        UPSTREAM_VERSION: v2.6.0
     ports:
-      - "8080:8080/tcp"
+      - 8080:8080/tcp
     environment:
-      NETWORKS: "mainnet,gnosis"
+      NETWORKS: mainnet,gnosis
       ADDRESSES: ""
       PAGE_SIZE: 10000
       LOG_LEVEL: INFO
       EXTRA_OPTS: ""
     restart: unless-stopped
     volumes:
-      - "cow-watch-tower-db:/usr/src/app/database"
+      - cow-watch-tower-db:/usr/src/app/database
 volumes:
   cow-watch-tower-db: {}
