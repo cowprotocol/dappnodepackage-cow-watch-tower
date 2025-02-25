@@ -1,3 +1,12 @@
 {
-  "signedContributors": []
+  "signedContributors": [
+    {
+      "name": "gosuto-inzasheru",
+      "id": 2835259,
+      "comment_id": 2681168485,
+      "created_at": "2025-02-25T08:48:43Z",
+      "repoId": 705252739,
+      "pullRequestNo": 19
+    }
+  ]
 }
